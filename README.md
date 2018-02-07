@@ -1,3 +1,4 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/e790678a99e441688aba06c73846b1e8)](https://app.codacy.com/app/fabianhagen87/Laravel-Translation-Manager?utm_source=github.com&utm_medium=referral&utm_content=Brotzka/Laravel-Translation-Manager&utm_campaign=badger)
 [![Latest Stable Version](https://poser.pugx.org/brotzka/Laravel-Translation-Manager/v/stable)](https://packagist.org/packages/brotzka/Laravel-Translation-Manager)
 [![Total Downloads](https://poser.pugx.org/brotzka/Laravel-Translation-Manager/downloads)](https://packagist.org/packages/brotzka/laravel-translation-manager) 
 [![Latest Unstable Version](https://poser.pugx.org/brotzka/Laravel-Translation-Manager/v/unstable)](https://packagist.org/packages/brotzka/laravel-translation-manager) 
