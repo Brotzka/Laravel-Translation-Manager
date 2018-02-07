@@ -1,3 +1,9 @@
+[![Latest Stable Version](https://poser.pugx.org/brotzka/Laravel-Translation-Manager/v/stable)](https://packagist.org/packages/brotzka/Laravel-Translation-Manager)
+[![Total Downloads](https://poser.pugx.org/brotzka/Laravel-Translation-Manager/downloads)](https://packagist.org/packages/brotzka/laravel-translation-manager) 
+[![Latest Unstable Version](https://poser.pugx.org/brotzka/Laravel-Translation-Manager/v/unstable)](https://packagist.org/packages/brotzka/laravel-translation-manager) 
+[![License](https://poser.pugx.org/brotzka/Laravel-Translation-Manager/license)](https://packagist.org/packages/brotzka/laravel-translation-manager)
+
+
 # Laravel Translation Manager
 
 This package provides an easy way to manage your translations in a database. It takes all files from your default locale folder (e.g. ``resources/lang/de``) and creates translation-groups (e.g. ``auth.php`` becomes translation-group ``auth``) which are stored in ``translation_groups``-table. Then every entry from each file will be saved to the ``translations``-table (yes, it takes care of multidimensional arrays of every depth).
