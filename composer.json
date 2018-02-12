@@ -17,13 +17,5 @@
         "psr-4": {
             "Brotzka\\TranslationManager\\": "src/"
         }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Brotzka\\TranslationManager\\TranslationManagerServiceProvider"
-            ],
-            "aliases": []
-        }
     }
 }
