@@ -2,8 +2,6 @@
 
 namespace Brotzka\TranslationManager;
 
-use Brotzka\TranslationManager\Module\Console\Commands\TranslationToDatabase;
-use Brotzka\TranslationManager\Module\Console\Commands\TranslationToFile;
 use Illuminate\Support\ServiceProvider;
 
 class TranslationManagerServiceProvider extends ServiceProvider
@@ -16,7 +14,6 @@ class TranslationManagerServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->loadMigrationsFrom(__DIR__ . '/database/migrations');
-		$this->registerCommands();
     }
 
     /**
@@ -27,15 +24,5 @@ class TranslationManagerServiceProvider extends ServiceProvider
     public function register()
     {
         //
-    }
-
-    private function registerCommands()
-    {
-    	if($this->app->runningInConsole()){
-    		$this->commands([
-                TranslationToDatabase::class,
-                TranslationToFile::class
-		    ]);
-	    }
     }
 }
