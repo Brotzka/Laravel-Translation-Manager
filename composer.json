@@ -2,9 +2,7 @@
     "name": "brotzka/laravel-translation-manager",
     "description": "Lets you manage your Laravel-translation files via database.",
     "type": "library",
-    "require": {
-        "laravel/laravel": "5.5"
-    },
+    "require": {},
     "license": "MIT",
     "authors": [
         {
