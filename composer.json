@@ -19,7 +19,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Brotzka\TranslationManager\TranslationManagerServiceProvider"
+                "Brotzka\\TranslationManager\\TranslationManagerServiceProvider"
             ]
         }
     },
