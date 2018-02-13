@@ -6,7 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class TranslationGroup extends Model
 {
-	protected $fillable = ['name', 'description'];
+    protected $fillable = ['name', 'description'];
+    public $table = 'translation_groups';
 
     public function entries()
     {
