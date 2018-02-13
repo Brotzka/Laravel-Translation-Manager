@@ -20,7 +20,8 @@
         "laravel": {
             "providers": [
                 "Brotzka\\TranslationManager\\TranslationManagerServiceProvider"
-            ]
+            ],
+            "aliases": {}
         }
-    },
+    }
 }
