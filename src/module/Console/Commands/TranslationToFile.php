@@ -38,8 +38,6 @@ class TranslationToFile extends Command
     {
         parent::__construct();
         $this->needed_languages = config('app.available_locales');
-        $this->translations = Translation::all();
-        $this->translation_groups = TranslationGroup::all();
         $this->language_folder = resource_path('lang\\');
     }
 
@@ -50,6 +48,9 @@ class TranslationToFile extends Command
      */
     public function handle(): void
     {
+        $this->translations = Translation::all();
+        $this->translation_groups = TranslationGroup::all();
+	    
         $this->getAllLanguagesFromTable();
         $this->generateLanguageFolders();
         $this->generateGroupFiles();
