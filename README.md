@@ -26,22 +26,6 @@ Updates are handled one-way. That means that changes which are made to a file wi
  ```
  'available_locales' => ['de', 'en', 'sv'],
  ```
- - add service provider to ```config/app.php``` providers-array:
- ```
-    /*
-     * Package Service Providers...
-     */
-    // other service provider...
-    Brotzka\TranslationManager\TranslationManagerServiceProvider::class,
- ```
- - add Artisan Commands to ```app/Console/Kernel``` 
- ```
- protected $commands = [
-    // other commands...
-    \Brotzka\TranslationManager\Module\Console\Commands\TranslationToDatabase::class,
-    \Brotzka\TranslationManager\Module\Console\Commands\TranslationToFile::class
- ];
- ```
  - run migration ```php artisan migrate```
 
 ## Commands
