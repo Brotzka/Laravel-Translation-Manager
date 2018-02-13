@@ -14,6 +14,7 @@ class TranslationManagerServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->loadMigrationsFrom(__DIR__ . '/database/migrations');
+        $this->registerCommands();
     }
 
     /**
@@ -24,5 +25,18 @@ class TranslationManagerServiceProvider extends ServiceProvider
     public function register()
     {
         //
+    }
+
+    /**
+     * Registering artisan commands
+     */
+    private function registerCommands()
+    {
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                \Brotzka\TranslationManager\Module\Console\Commands\TranslationToDatabase::class,
+                \Brotzka\TranslationManager\Module\Console\Commands\TranslationToFile::class
+            ]);
+        }
     }
 }
