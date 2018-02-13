@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Translation extends Model
 {
     protected $fillable = ['language', 'key', 'value', 'parent', 'translation_group'];
+    public $table = 'translations';
 
     /**
      * Relationshipss
